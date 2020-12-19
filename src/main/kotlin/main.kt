@@ -1,7 +1,9 @@
+import sorting.mergeSortWithInversion
+
 fun main(args: Array<String>) {
 
     val len = 10
-    val arr = getRandomMutableIntList(5, len)
+    val arr = getRandomMutableIntList(6, len)
 
 ////////////////////////////// SEARCHING ///////////////////////////////////////////////////////////////////
 
@@ -33,6 +35,11 @@ fun main(args: Array<String>) {
 //    println(arr)
 //    mergeSort(arr,0,arr.size-1)
 //    println(arr)
+
+////// Merge Sort With Inversions
+    println(arr)
+    println("Inversions: ${mergeSortWithInversion(arr,0,arr.size-1)}")
+    println(arr)
 
 ////// Quick Sort
 //    println(arr)
