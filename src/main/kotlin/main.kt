@@ -1,6 +1,3 @@
-import sorting.insertionSort
-import sorting.quickSort
-
 fun main(args: Array<String>) {
 
     val len = 10
@@ -16,6 +13,16 @@ fun main(args: Array<String>) {
 //    print(binarySearch(sortedArr,0,sortedArr.size-1,sortedArr[sortedArr.size-1]))
 
 ////////////////////////////// SORTING ///////////////////////////////////////////////////////////////////
+
+////// Bubble Sort
+//    println(arr)
+//    bubbleSort(arr)
+//    println(arr)
+
+////// Bubble Sort Alternative Implementation
+//    println(arr)
+//    bubbleSortAlternative(arr)
+//    println(arr)
 
 ////// Insertion Sort
 //    println(arr)
