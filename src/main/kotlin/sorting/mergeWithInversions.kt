@@ -32,6 +32,7 @@ fun mergeWithInversion(arr: MutableList<Int>, l: Int, ll: Int, r: Int, rr: Int):
     var inv = 0
 
     while (i <= ll && j <= rr) {
+        // always use <= here, using < will sort the array but give wrong number of inversions
         if (arr[i] <= arr[j]) {
             sortedL.add(arr[i])
             i++

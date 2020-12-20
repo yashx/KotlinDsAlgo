@@ -1,4 +1,4 @@
-import sorting.mergeSortWithInversion
+import misc.maxSubArrayDnC
 
 fun main(args: Array<String>) {
 
@@ -37,13 +37,19 @@ fun main(args: Array<String>) {
 //    println(arr)
 
 ////// Merge Sort With Inversions
-    println(arr)
-    println("Inversions: ${mergeSortWithInversion(arr,0,arr.size-1)}")
-    println(arr)
+//    println(arr)
+//    println("Inversions: ${mergeSortWithInversion(arr,0,arr.size-1)}")
+//    println(arr)
 
 ////// Quick Sort
 //    println(arr)
 //    quickSort(arr,0,arr.size-1)
 //    println(arr)
 
+///////////////////////////////////// MISC ////////////////////////////////////
+
+///// Max Sub Array
+    val a = listOf(-2, -3, 4, -1, -2, 1, 5, -3)
+    val maxSubArray = maxSubArrayDnC(a, 0, a.size - 1)
+    println("Max sum: ${maxSubArray.sum} from ${maxSubArray.startIndex} to ${maxSubArray.endIndex} index")
 }
